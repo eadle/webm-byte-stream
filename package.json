@@ -1,0 +1,22 @@
+{
+  "name": "webm-byte-stream",
+  "version": "0.0.0",
+  "description": "A stream of initialization segments and media segments.",
+  "main": "webm-byte-stream.js",
+  "scripts": {
+    "test": "echo \"Error: get it together mate\" && exit 1"
+  },
+  "keywords": [
+    "webm",
+    "matroska",
+    "livestream",
+    "bytestream",
+    "ebml",
+    "mse"
+  ],
+  "author": "Ed Markowski <siphon@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ebml": ">0.2.0"
+  }
+}
