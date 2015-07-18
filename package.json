@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: get it together mate\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/siphontv/webm-byte-stream.git"
+  },
   "keywords": [
     "webm",
     "matroska",
