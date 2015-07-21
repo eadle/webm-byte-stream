@@ -29,6 +29,6 @@ webmstream.on('Media Segment', function(data) {
 var file = fs.createReadStream('./test.webm', {flags: 'r'});
 
 file.on('data', function(data) {
-	webmstream.write(data);
+  webmstream.write(data);
 });
 ```
