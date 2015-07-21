@@ -5,7 +5,7 @@ Node module that emits Initialization Segments and Media Segments.
 
 Not published yet.
 
-# example
+# usage
 
 ``` js
 var WebMByteStream = require('webm-byte-stream'),
