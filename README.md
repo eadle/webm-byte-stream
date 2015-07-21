@@ -5,7 +5,7 @@ Node module that emits Initialization Segments and Media Segments.
 
 Not published yet.
 
-# usage
+# example
 
 ``` js
 var WebMByteStream = require('webm-byte-stream'),
@@ -32,3 +32,5 @@ file.on('data', function(data) {
   webmstream.write(data);
 });
 ```
+# format
+In order to use this module, your encoding should place a keyframe at the beginning of each cluster. See the [specification](https://w3c.github.io/media-source/webm-byte-stream-format.html) for more details about the WebM Byte Stream Format.
