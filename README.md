@@ -33,4 +33,4 @@ file.on('data', function(data) {
 });
 ```
 # format
-In order to use this module, your encoding should place a keyframe at the beginning of each cluster. See the [specification](https://w3c.github.io/media-source/webm-byte-stream-format.html) for more details about the WebM Byte Stream Format.
+In order to use this module, your encoding must place a keyframe at the beginning of each cluster. See the [specification](https://w3c.github.io/media-source/webm-byte-stream-format.html) for more details about the WebM Byte Stream Format.
