@@ -23,7 +23,7 @@
   "author": "Ed Markowski <siphon@protonmail.com>",
   "license": "MIT",
   "dependencies": {
-    "ebml": ">0.2.0"
+    "ebml": "^1.0.0"
   },
   "bugs": {
     "url": "https://github.com/siphontv/webm-byte-stream/issues"
