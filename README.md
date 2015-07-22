@@ -3,7 +3,7 @@ Node module that emits Initialization Segments and Media Segments.
 
 # install
 
-Not published yet.
+npm install --save webm-byte-stream
 
 # example
 
