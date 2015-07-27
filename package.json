@@ -1,10 +1,10 @@
 {
   "name": "webm-byte-stream",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A stream of initialization segments and media segments",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: need to make unit tests\" && exit 1"
+    "test": "mocha test/"
   },
   "repository": {
     "type": "git",
@@ -13,10 +13,8 @@
   "keywords": [
     "webm",
     "byte",
-    "stream",
     "matroska",
     "livestream",
-    "bytestream",
     "ebml",
     "mse"
   ],
