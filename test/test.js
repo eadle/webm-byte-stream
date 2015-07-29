@@ -21,6 +21,14 @@ describe('webm-byte-stream', function() {
           webmstream.write(buffer);
         }, /write size exceeds/);
       });
+      it('should wrap around on split write', function() {
+        var webmstream = new WebMByteStream({bufferSize: 4}),
+            buffer = new Buffer([0xDD, 0xFF, 0xEE]);
+        webmstream.write(buffer);
+        webmstream.write(buffer);
+        var b = webmstream._read(0, 4);
+        assert.equal('ffeeeedd', b.readUIntBE(0, 4).toString(16));
+      });
     });
     describe('#_read', function() {
       it('should throw for read size greater than bufferSize', function() {
@@ -28,6 +36,13 @@ describe('webm-byte-stream', function() {
           var webmstream = new WebMByteStream({bufferSize: 3});
           webmstream._read(0, 4);
         }, /read size exceeds/);
+      });
+      it('should wrap around on split read', function() {
+        var webmstream = new WebMByteStream({bufferSize: 4}),
+            buffer = new Buffer([0xEF, 0xDE, 0xAD, 0xBE]);
+        webmstream.write(buffer);
+        var b = webmstream._read(9, 13);
+        assert.equal('deadbeef', b.readUIntBE(0, 4).toString(16));
       });
     });
   });
