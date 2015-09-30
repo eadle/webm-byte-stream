@@ -1,6 +1,6 @@
 {
   "name": "webm-byte-stream",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A stream of initialization segments and media segments",
   "main": "index.js",
   "scripts": {
