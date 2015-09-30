@@ -21,13 +21,14 @@
   "author": "Ed Markowski <siphon@protonmail.com>",
   "license": "MIT",
   "dependencies": {
-    "ebml": "^1.0.0"
+    "ebml": "^2.1.0"
   },
   "bugs": {
     "url": "https://github.com/siphontv/webm-byte-stream/issues"
   },
   "devDependencies": {
     "debug": "^2.2.0",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "net": "^1.0.2"
   }
 }
