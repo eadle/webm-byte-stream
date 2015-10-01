@@ -1,13 +1,18 @@
 var WebMByteStream = require('../index.js'),
     fs = require('fs');
 
-// Media Segment durations not included by default
-var webmstream = new WebMByteStream({durations: true}),
-    input = fs.createReadStream(__dirname + '/../media/test.webm', {flags: 'r'});
+var webmstream = new WebMByteStream({
+  durations: true,     // false by default
+  clearTimecodes: true // false by default
+});
+
+var input = fs.createReadStream(__dirname + '/../media/test.webm', {
+  flags: 'r'
+});
 
 webmstream.on('Initialization Segment', function(data) {
-  var initseg = data;
-  console.log('Initialization Segment: length=' + initseg.length);
+  var initSegment = data;
+  console.log('Initialization Segment: length=' + initSegment.length);
 });
 
 webmstream.on('Media Segment', function(data) {
