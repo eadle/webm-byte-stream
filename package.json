@@ -2,6 +2,8 @@
   "name": "webm-byte-stream",
   "version": "0.1.2",
   "description": "A stream of initialization segments and media segments",
+  "author": "Ed Markowski <siphon@protonmail.com>",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/"
@@ -18,8 +20,6 @@
     "ebml",
     "mse"
   ],
-  "author": "Ed Markowski <siphon@protonmail.com>",
-  "license": "MIT",
   "dependencies": {
     "ebml": "^2.1.0"
   },
