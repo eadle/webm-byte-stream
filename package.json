@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/siphontv/webm-byte-stream.git"
+    "url": "git://github.com/eadle/webm-byte-stream.git"
   },
   "keywords": [
     "webm",
@@ -24,7 +24,7 @@
     "ebml": "^2.1.0"
   },
   "bugs": {
-    "url": "https://github.com/siphontv/webm-byte-stream/issues"
+    "url": "https://github.com/eadle/webm-byte-stream/issues"
   },
   "devDependencies": {
     "debug": "^2.2.0",
